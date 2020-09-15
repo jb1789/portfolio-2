@@ -1,0 +1,98 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+
+}
+
+input[type=submit] {
+  background-color: orange;
+  color: navy;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: orange;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+  float: left;
+}
+.contact{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 50px;
+  padding-left: 40px;
+  padding-top: 40px;
+  padding-bottom: 300px;
+  float: left;
+}
+.conborder{
+  border-left: solid navy;
+  border-top: solid navy;
+  border-right: solid navy;
+  border-bottom: dashed orange;
+  border-width: 8px;
+  margin-top: 60px;
+  height: 150px;
+  padding-top: 35px;
+  padding-left: 100px;
+}
+.info{
+  border-left:solid navy;
+  border-right: solid navy;
+  border-bottom: solid navy;
+  border-width: 8px;
+  padding-left: 20px;
+  height: auto;
+}
+.copyright{
+  padding-top: 40px;
+  margin-top: 200px;
+  background-color: orange;
+  border:solid navy;
+  column-width: 100%;
+}
+.cpytext{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  text-align: center;
+  padding: 20px 20px 20px 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
